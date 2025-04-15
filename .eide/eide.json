@@ -1,0 +1,136 @@
+{
+  "name": "stm32f1xx_gcc-quickstart",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [
+    "src",
+    "hal",
+    "../bsp"
+  ],
+  "outDir": "build",
+  "deviceName": "STM32F102C8",
+  "packDir": null,
+  "miscInfo": {
+    "lastBuildTime": 1608695075742,
+    "uid": "1665880f827a99ba15420c273456a884"
+  },
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": []
+  },
+  "targets": {
+    "Debug": {
+      "excludeList": [
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c",
+        "hal/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c"
+      ],
+      "toolchain": "GCC",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "default",
+        "useCustomScatterFile": true,
+        "scatterFilePath": "stm32f1x_64KB_flash.ld",
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x2800"
+              },
+              "isChecked": "1",
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x08000000",
+                "size": "0x10000"
+              },
+              "isChecked": "1",
+              "isStartup": true
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "0x08000000",
+        "cpuInfo": {
+          "vendor": "ST",
+          "cpuName": "STM32F103C8"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "src",
+          "lib/cmsis",
+          "hal/STM32F10x_StdPeriph_Driver",
+          "hal/STM32F10x_StdPeriph_Driver/inc",
+          "hal/STM32F10x_StdPeriph_Driver/src",
+          "../bsp",
+          "../bsp/lcd"
+        ],
+        "libList": [],
+        "defineList": [
+          "USE_STDPERIPH_DRIVER",
+          "STM32F10X_MD"
+        ]
+      },
+      "builderOptions": {
+        "GCC": {
+          "version": 5,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "$float-abi-type": "softfp",
+            "output-debug-info": "enable",
+            "misc-control": "--specs=nosys.specs --specs=nano.specs"
+          },
+          "c/cpp-compiler": {
+            "language-c": "c11",
+            "language-cpp": "c++11",
+            "optimization": "level-debug",
+            "warnings": "all-warnings",
+            "one-elf-section-per-function": true,
+            "one-elf-section-per-data": true,
+            "C_FLAGS": "",
+            "CXX_FLAGS": ""
+          },
+          "asm-compiler": {
+            "ASM_FLAGS": ""
+          },
+          "linker": {
+            "output-format": "elf",
+            "remove-unused-input-sections": true,
+            "LD_FLAGS": "",
+            "LIB_FLAGS": "-lm"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}

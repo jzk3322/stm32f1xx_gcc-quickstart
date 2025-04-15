@@ -1,0 +1,17 @@
+CompileFlags:
+    Add:
+        - -Ic:\users\administrator\.eide\tools\gcc_arm_v4_9\arm-none-eabi\include\c++\4.9.3
+        - -Ic:\users\administrator\.eide\tools\gcc_arm_v4_9\arm-none-eabi\include\c++\4.9.3\arm-none-eabi\armv7-m
+        - -Ic:\users\administrator\.eide\tools\gcc_arm_v4_9\arm-none-eabi\include\c++\4.9.3\backward
+        - -Ic:\users\administrator\.eide\tools\gcc_arm_v4_9\lib\gcc\arm-none-eabi\4.9.3\include
+        - -Ic:\users\administrator\.eide\tools\gcc_arm_v4_9\lib\gcc\arm-none-eabi\4.9.3\include-fixed
+        - -Ic:\users\administrator\.eide\tools\gcc_arm_v4_9\arm-none-eabi\include
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\arm-none-eabi\include\newlib-nano
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\arm-none-eabi\include\c++\10.2.1
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\arm-none-eabi\include\c++\10.2.1\arm-none-eabi\thumb\v7-m\nofp
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\arm-none-eabi\include\c++\10.2.1\backward
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\lib\gcc\arm-none-eabi\10.2.1\include
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\lib\gcc\arm-none-eabi\10.2.1\include-fixed
+        - -Ic:\users\administrator\.eide\tools\gcc_arm\arm-none-eabi\include
+    CompilationDatabase: ./build/Debug
+    Compiler: C:\Users\Administrator\.eide\tools\gcc_arm\bin\arm-none-eabi-g++.exe
